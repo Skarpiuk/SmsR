@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.pc.smsr.MainActivity"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/nrTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:hint="nr telefonu"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:numeric="integer"
+                    android:paddingLeft="15dp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/kontakty"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:onClick="onClickSelectContact"
+                    android:id="@+id/baton"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/iloscWiadmosci"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="ilość wiadomości"
+                    android:inputType="number"
+                    android:paddingLeft="15dp" />
+
+                <EditText
+                    android:id="@+id/opoznienie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="opóźnienie (ms)"
+                    android:inputType="number"
+                    android:paddingLeft="15dp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/wiadomosc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:hint="Wprowadź wiadomość"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/button"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:onClick="wyslij"
+                        android:text="Wyślij"
+                        android:layout_gravity="center"
+                        android:textColor="#ffff" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="1dp"
+                        android:id="@+id/button2"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:onClick="getLocalization"
+                        android:text="Pobierz lokalizacje"
+                        android:layout_gravity="center"
+                        android:textColor="#ffff" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="1dp"
+                        android:id="@+id/share_button"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="Zapisz wiadomość na dysku"
+                        android:layout_gravity="center"
+                        android:onClick="shareonG"
+                        android:textColor="#ffff" /><![CDATA[
+
+
+
+                        />
+
+
+                ]]>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+   </LinearLayout>

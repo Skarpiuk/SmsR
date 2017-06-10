@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "286800166656",
+    "firebase_url": "https://smsr-ebec5.firebaseio.com",
+    "project_id": "smsr-ebec5",
+    "storage_bucket": "smsr-ebec5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286800166656:android:f523738a082cb201",
+        "android_client_info": {
+          "package_name": "com.example.pc.smsr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286800166656-oijbt9qg9isctsv6lr6o22hhi9512mmu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pc.smsr",
+            "certificate_hash": "ba798edd2d6b7da3b3512e6320b2090dc7d355e2"
+          }
+        },
+        {
+          "client_id": "286800166656-ine9surll2k26l4mvvdpufv8csa75nmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE9uOztEz4SpoR_F-Y43fg72gUuvvykXk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286800166656-ine9surll2k26l4mvvdpufv8csa75nmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
